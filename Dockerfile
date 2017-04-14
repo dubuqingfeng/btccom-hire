@@ -9,7 +9,7 @@ COPY . /usr/src/demo
 WORKDIR /usr/src/demo
 RUN \
   apt-get update && \
-  apt-get install -y supervisor && \
+  apt-get install -y supervisor php-redis && \
   rm -rf /var/lib/apt/lists/*
 
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf

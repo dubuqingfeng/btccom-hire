@@ -68,5 +68,6 @@ cp webdis.json ./webdis/
 git clone git://github.com/nicolasff/webdis.git
 cd webdis
 make
+// webdis(可以用nohup后台运行,遇到过段错误)
 ./webdis/webdis &
 ```

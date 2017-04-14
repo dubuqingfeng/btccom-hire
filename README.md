@@ -21,7 +21,28 @@ docker pull redis
 docker run --name db-redis -p 6379:6379 -d redis
 ```
 
-2.本地测试
+2.安装php-redis
+
+```angular2html
+// Mac
+brew install php55-redis
+phpbrew --debug ext install github:phpredis/phpredis
+// Linux
+// Ubuntu
+apt-get install php5-redis
+// 源码编译
+git clone git://github.com/nicolasff/phpredis.git
+cd phpredis
+phpize
+./configure
+make
+sudo -s make install
+sudo -s
+echo "extension=redis.so">/etc/php5/conf.d/redis.ini
+exit
+```
+
+3.本地测试
 
 ```angular2html
 // 不带实时UI：

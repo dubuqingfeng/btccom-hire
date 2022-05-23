@@ -30,5 +30,3 @@
 
 请按要求开发并生成UI。开发完成后请将代码上传至你的github repo以供查看。
 
-题目描述和要求若有疑问，可通过邮件询问 (tianzhao.li@bitmain.com)。
-
